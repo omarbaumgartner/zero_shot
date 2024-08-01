@@ -24,3 +24,8 @@ if [ $? -ne 0 ]; then
 fi
 
 echo "Streamlit app is running at https://localhost"
+
+docker system prune -af
+
+# Step 4: Remove unused volumes
+docker volume prune -f
