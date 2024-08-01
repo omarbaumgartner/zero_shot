@@ -15,7 +15,7 @@ fi
 
 # Run the Docker container
 echo "Running the Docker container..."
-docker run -p 81:81 -p 8501:8501 $IMAGE_NAME
+docker run -p 81:81 -p 8502:8502 $IMAGE_NAME
 
 # Check if the container run was successful
 if [ $? -ne 0 ]; then
