@@ -21,4 +21,4 @@ RUN pip install streamlit torch
 RUN pip install transformers
 
 # Start Streamlit and Nginx
-CMD ["sh", "-c", "streamlit run main.py'"]
+CMD ["sh", "-c", "streamlit run main.py"]

@@ -25,7 +25,9 @@ fi
 
 echo "Streamlit app is running at https://localhost"
 
+echo "Pruning system"
 docker system prune -af
 
 # Step 4: Remove unused volumes
+echo "Removing unused volumes"
 docker volume prune -f
