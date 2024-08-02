@@ -11,9 +11,14 @@ RUN apt-get update && apt-get clean
 # Create and set the working directory
 WORKDIR /app
 
+# Copy the current directory contents into the container at /app
+COPY . /app
+
 # Install Python dependencies
 RUN pip install --upgrade pip
-RUN pip install streamlit torch transformers
+RUN pip install streamlit torch 
+
+RUN pip install transformers
 
 # Start Streamlit and Nginx
 CMD ["sh", "-c", "streamlit run main.py'"]
